@@ -317,6 +317,7 @@ p { margin: 0 0 1em; }
 
 @media (max-width: 800px) {
   .hero-inner { grid-template-columns: 1fr; }
+  .hero-bg { background-position: 62% center; }
   .hero::before {
     background: linear-gradient(180deg, rgba(16,9,4,0.40) 0%, rgba(16,9,4,0.65) 60%, rgba(16,9,4,0.95) 100%);
   }
