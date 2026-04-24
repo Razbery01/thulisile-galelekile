@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Podcast — Thulisile</title>
+<meta name="description" content="An audio companion for long drives, quiet mornings, and in-between moments." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,500;1,400&family=Inter:wght@300;400;500;600&family=Allura&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="has-dropdown"><a href="about.html">About</a>
+        <ul class="dropdown"><li><a href="about.html">About Thulisile</a></li><li><a href="partners.html">Partners &amp; Clients</a></li></ul>
+      </li>
+      <li class="has-dropdown"><a href="offerings.html">Offerings</a>
+        <ul class="dropdown"><li><a href="fun-to-fit.html">Fun to Fit</a></li><li><a href="reflections.html">Reflections</a></li><li><a href="life-journeys.html">Life Journeys</a></li><li><a href="corporate-strategy.html">Corporate Strategy</a></li></ul>
+      </li>
+    </ul>
+    <a href="index.html" class="nav-logo">Thulisile</a>
+    <ul class="nav-side">
+      <li class="has-dropdown"><a href="media.html" class="active">Media</a>
+        <ul class="dropdown"><li><a href="blog.html">Blog</a></li><li><a href="youtube.html">YouTube</a></li><li><a href="podcast.html">Podcast</a></li></ul>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <span class="script-kicker">Listen in</span>
+    <h1>Silent Rise</h1>
+    <p>An audio companion for long drives, quiet mornings, and the in-between moments when you need a steady voice.</p>
+    <div style="display:flex;gap:10px;justify-content:center;margin-top:22px;flex-wrap:wrap;">
+      <a href="#" class="btn btn-primary">Apple Podcasts</a>
+      <a href="#" class="btn btn-outline">Spotify</a>
+    </div>
+  </div>
+</section>
+
+<section class="section-cream">
+  <div class="container">
+    <div style="max-width:860px;margin:0 auto;">
+      <div style="background:var(--cream-soft);border-radius:var(--radius-md);padding:32px;display:flex;gap:24px;align-items:center;flex-wrap:wrap;">
+        <div style="flex:0 0 auto;width:120px;height:120px;border-radius:14px;overflow:hidden;">
+          <img src="images/testimonial-avatar.png" alt="" style="width:100%;height:100%;object-fit:cover;" />
+        </div>
+        <div style="flex:1;min-width:260px;">
+          <span class="eyebrow">Episode 12 · Latest</span>
+          <h3 style="margin:4px 0 8px;color:var(--brown-deep);">On returning without apology</h3>
+          <p style="color:var(--brown-rich);font-size:0.92rem;">A conversation about the quiet bravery of coming back to yourself — even when no one is watching.</p>
+          <div class="insights-audio" style="margin-top:8px;"></div>
+        </div>
+      </div>
+
+      <h2 class="mt-lg" style="margin-top:64px;">More episodes</h2>
+      <div class="card-grid" style="padding:0;margin-top:20px;">
+        <article class="card">
+          <span class="eyebrow">Episode 11 · 32 min</span>
+          <h3>The women who raised us</h3>
+          <p>On inheritance, lineage, and the lessons we carry without knowing.</p>
+        </article>
+        <article class="card">
+          <span class="eyebrow">Episode 10 · 28 min</span>
+          <h3>When calm feels unsafe</h3>
+          <p>Why stillness scares us, and how to meet the resistance with tenderness.</p>
+        </article>
+        <article class="card">
+          <span class="eyebrow">Episode 9 · 41 min</span>
+          <h3>Leading without losing yourself</h3>
+          <p>A dialogue with a CEO who learned to lead from rest rather than fear.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <a href="index.html" class="footer-logo">Thulisile</a>
+    <ul class="footer-nav">
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="partners.html">Partnerships</a></li><li><a href="offerings.html">Offerings</a></li><li><a href="media.html">Media</a></li><li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="footer-actions"><a href="contact.html" class="btn btn-light">Book a session</a></div>
+    <div class="footer-bottom">&copy; <span id="year"></span> Thulisile. All rights reserved.</div>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="script.js"></script>
+</body>
+</html>

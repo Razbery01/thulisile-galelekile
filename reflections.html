@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Reflections — Thulisile</title>
+<meta name="description" content="Pause. Look inward. Let truth meet you in the quiet." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,500;1,400&family=Inter:wght@300;400;500;600&family=Allura&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="has-dropdown"><a href="about.html">About</a>
+        <ul class="dropdown"><li><a href="about.html">About Thulisile</a></li><li><a href="partners.html">Partners &amp; Clients</a></li></ul>
+      </li>
+      <li class="has-dropdown"><a href="offerings.html" class="active">Offerings</a>
+        <ul class="dropdown"><li><a href="fun-to-fit.html">Fun to Fit</a></li><li><a href="reflections.html">Reflections</a></li><li><a href="life-journeys.html">Life Journeys</a></li><li><a href="corporate-strategy.html">Corporate Strategy</a></li></ul>
+      </li>
+    </ul>
+    <a href="index.html" class="nav-logo">Thulisile</a>
+    <ul class="nav-side">
+      <li class="has-dropdown"><a href="media.html">Media</a>
+        <ul class="dropdown"><li><a href="blog.html">Blog</a></li><li><a href="youtube.html">YouTube</a></li><li><a href="podcast.html">Podcast</a></li></ul>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <span class="script-kicker">Pillar two</span>
+    <h1>Reflections</h1>
+    <p>Pause. Look inward. Let truth meet you in the quiet.</p>
+  </div>
+</section>
+
+<section class="section-cream">
+  <div class="two-col">
+    <div>
+      <span class="eyebrow">The invitation</span>
+      <h2>When the noise stops, you begin.</h2>
+      <p>Reflections is a practice of returning. Through guided journaling, one-on-one conversations, and contemplative prompts, we create the space for you to hear yourself again.</p>
+      <p>These are not therapy sessions and they are not coaching. They are quiet rooms — held gently — where you can notice what is already true.</p>
+      <a href="contact.html" class="btn btn-text mt-sm">Book a reflection <span class="arrow">&#8599;</span></a>
+    </div>
+    <img src="images/pillar-reflections.png" alt="Reflections" />
+  </div>
+</section>
+
+<section class="section-brown">
+  <div class="container">
+    <div style="max-width:820px;margin:0 auto;text-align:center;">
+      <span class="eyebrow" style="color:rgba(246,236,221,0.6);">Formats</span>
+      <h2 style="color:var(--cream);">Ways to reflect.</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));gap:22px;margin-top:48px;">
+      <div style="background:rgba(246,236,221,0.05);border:1px solid var(--line);border-radius:16px;padding:28px;">
+        <h3 style="color:var(--orange-soft);font-size:1.2rem;">Private sessions</h3>
+        <p style="color:rgba(246,236,221,0.78);font-size:0.95rem;">A one-on-one container — held, confidential, unhurried.</p>
+      </div>
+      <div style="background:rgba(246,236,221,0.05);border:1px solid var(--line);border-radius:16px;padding:28px;">
+        <h3 style="color:var(--orange-soft);font-size:1.2rem;">Women's circles</h3>
+        <p style="color:rgba(246,236,221,0.78);font-size:0.95rem;">Small groups that meet to reflect, witness, and return to self.</p>
+      </div>
+      <div style="background:rgba(246,236,221,0.05);border:1px solid var(--line);border-radius:16px;padding:28px;">
+        <h3 style="color:var(--orange-soft);font-size:1.2rem;">Retreats</h3>
+        <p style="color:rgba(246,236,221,0.78);font-size:0.95rem;">Immersive weekends away from the pace of everyday life.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="journey-insights" style="padding-top:90px;">
+  <div class="journey-insights-grid">
+    <div class="journey-card">
+      <h2>Begin in the quiet</h2>
+      <p>Take the first step. We'll meet you there.</p>
+      <div class="journey-actions"><a href="contact.html" class="btn btn-dark">Book a session</a></div>
+    </div>
+    <div class="insights-card">
+      <div><span class="eyebrow">Remember</span><h3 style="font-size:1.4rem;">"Stillness is not absence. It is presence."</h3></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <a href="index.html" class="footer-logo">Thulisile</a>
+    <ul class="footer-nav">
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="partners.html">Partnerships</a></li><li><a href="offerings.html">Offerings</a></li><li><a href="media.html">Media</a></li><li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="footer-actions"><a href="contact.html" class="btn btn-light">Book a session</a></div>
+    <div class="footer-bottom">&copy; <span id="year"></span> Thulisile. All rights reserved.</div>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="script.js"></script>
+</body>
+</html>

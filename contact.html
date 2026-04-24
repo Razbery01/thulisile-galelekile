@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Bookings &amp; Contact — Thulisile</title>
+<meta name="description" content="Book a session with Thulisile or send us a message — we're here when you're ready." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,500;1,400&family=Inter:wght@300;400;500;600&family=Allura&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="has-dropdown"><a href="about.html">About</a>
+        <ul class="dropdown"><li><a href="about.html">About Thulisile</a></li><li><a href="partners.html">Partners &amp; Clients</a></li></ul>
+      </li>
+      <li class="has-dropdown"><a href="offerings.html">Offerings</a>
+        <ul class="dropdown"><li><a href="fun-to-fit.html">Fun to Fit</a></li><li><a href="reflections.html">Reflections</a></li><li><a href="life-journeys.html">Life Journeys</a></li><li><a href="corporate-strategy.html">Corporate Strategy</a></li></ul>
+      </li>
+    </ul>
+    <a href="index.html" class="nav-logo">Thulisile</a>
+    <ul class="nav-side">
+      <li class="has-dropdown"><a href="media.html">Media</a>
+        <ul class="dropdown"><li><a href="blog.html">Blog</a></li><li><a href="youtube.html">YouTube</a></li><li><a href="podcast.html">Podcast</a></li></ul>
+      </li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <span class="script-kicker">Here when you're ready</span>
+    <h1>Bookings &amp; Contact</h1>
+    <p>Book a session, request a keynote, or simply say hello. We reply to every message — always with care, usually within two working days.</p>
+  </div>
+</section>
+
+<section class="section-cream">
+  <div class="form-wrap">
+    <form data-form>
+      <div class="field">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div class="field">
+        <label for="type">What brings you here?</label>
+        <select id="type" name="type">
+          <option>Book a one-on-one session</option>
+          <option>Join a women's circle or retreat</option>
+          <option>Corporate keynote or engagement</option>
+          <option>Media or podcast enquiry</option>
+          <option>Just saying hello</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="message">Your message</label>
+        <textarea id="message" name="message" placeholder="Tell us a little about where you are and what you're hoping for."></textarea>
+      </div>
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary">Send message</button>
+      </div>
+    </form>
+
+    <div style="margin-top:56px;padding-top:32px;border-top:1px solid rgba(35,23,16,0.15);text-align:center;">
+      <span class="eyebrow">Other ways to reach us</span>
+      <p style="color:var(--brown-rich);margin-top:8px;"><a href="mailto:hello@thulisile.com" style="color:var(--orange);text-decoration:underline;">hello@thulisile.com</a></p>
+      <p style="color:var(--brown-rich);font-size:0.9rem;">Based in KwaZulu-Natal · Working globally</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <a href="index.html" class="footer-logo">Thulisile</a>
+    <ul class="footer-nav">
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="partners.html">Partnerships</a></li><li><a href="offerings.html">Offerings</a></li><li><a href="media.html">Media</a></li><li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="footer-actions"><a href="contact.html" class="btn btn-light">Book a session</a></div>
+    <div class="footer-bottom">&copy; <span id="year"></span> Thulisile. All rights reserved.</div>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Media — Thulisile</title>
+<meta name="description" content="Words, conversations, and quiet transmissions from the Thulisile movement." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,500;1,400&family=Inter:wght@300;400;500;600&family=Allura&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="has-dropdown"><a href="about.html">About</a>
+        <ul class="dropdown"><li><a href="about.html">About Thulisile</a></li><li><a href="partners.html">Partners &amp; Clients</a></li></ul>
+      </li>
+      <li class="has-dropdown"><a href="offerings.html">Offerings</a>
+        <ul class="dropdown"><li><a href="fun-to-fit.html">Fun to Fit</a></li><li><a href="reflections.html">Reflections</a></li><li><a href="life-journeys.html">Life Journeys</a></li><li><a href="corporate-strategy.html">Corporate Strategy</a></li></ul>
+      </li>
+    </ul>
+    <a href="index.html" class="nav-logo">Thulisile</a>
+    <ul class="nav-side">
+      <li class="has-dropdown"><a href="media.html" class="active">Media</a>
+        <ul class="dropdown"><li><a href="blog.html">Blog</a></li><li><a href="youtube.html">YouTube</a></li><li><a href="podcast.html">Podcast</a></li></ul>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <span class="script-kicker">Words &amp; conversations</span>
+    <h1>Media</h1>
+    <p>Reflections in writing. Conversations on video. A podcast for the quiet hours. Find a format that meets you where you are.</p>
+  </div>
+</section>
+
+<section class="section-cream">
+  <div class="card-grid">
+    <a href="blog.html" class="card">
+      <div class="card-media"><img src="images/pillar-reflections.png" alt="Blog" /></div>
+      <span class="eyebrow">Blog</span>
+      <h3>Written reflections</h3>
+      <p>Essays, notes, and short pieces on stillness, identity, and leadership.</p>
+    </a>
+    <a href="youtube.html" class="card">
+      <div class="card-media"><img src="images/featured-video-main.png" alt="YouTube" /></div>
+      <span class="eyebrow">YouTube</span>
+      <h3>Video conversations</h3>
+      <p>Interviews, keynotes, and intimate talks on authenticity in practice.</p>
+    </a>
+    <a href="podcast.html" class="card">
+      <div class="card-media"><img src="images/featured-thumb-2.png" alt="Podcast" /></div>
+      <span class="eyebrow">Podcast</span>
+      <h3>Silent Rise</h3>
+      <p>An audio companion for long drives, quiet mornings, and in-between moments.</p>
+    </a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <a href="index.html" class="footer-logo">Thulisile</a>
+    <ul class="footer-nav">
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="partners.html">Partnerships</a></li><li><a href="offerings.html">Offerings</a></li><li><a href="media.html">Media</a></li><li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="footer-actions"><a href="contact.html" class="btn btn-light">Book a session</a></div>
+    <div class="footer-bottom">&copy; <span id="year"></span> Thulisile. All rights reserved.</div>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="script.js"></script>
+</body>
+</html>

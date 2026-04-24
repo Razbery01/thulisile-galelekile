@@ -1,0 +1,5 @@
+extract-tmp/
+extracted-images/
+*.pdf
+.DS_Store
+node_modules/

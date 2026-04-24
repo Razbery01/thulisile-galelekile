@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Offerings — Thulisile</title>
+<meta name="description" content="Four pillars that shape the journey: Fun to Fit, Reflections, Life Journeys, and Corporate Strategy." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,500;1,400&family=Inter:wght@300;400;500;600&family=Allura&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="has-dropdown">
+        <a href="about.html">About</a>
+        <ul class="dropdown">
+          <li><a href="about.html">About Thulisile</a></li>
+          <li><a href="partners.html">Partners &amp; Clients</a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown">
+        <a href="offerings.html" class="active">Offerings</a>
+        <ul class="dropdown">
+          <li><a href="fun-to-fit.html">Fun to Fit</a></li>
+          <li><a href="reflections.html">Reflections</a></li>
+          <li><a href="life-journeys.html">Life Journeys</a></li>
+          <li><a href="corporate-strategy.html">Corporate Strategy</a></li>
+        </ul>
+      </li>
+    </ul>
+    <a href="index.html" class="nav-logo">Thulisile</a>
+    <ul class="nav-side">
+      <li class="has-dropdown">
+        <a href="media.html">Media</a>
+        <ul class="dropdown">
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="youtube.html">YouTube</a></li>
+          <li><a href="podcast.html">Podcast</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <span class="script-kicker">Our work</span>
+    <h1>The four pillars</h1>
+    <p>Each offering is an invitation to pause, to listen, and to rise in authenticity — at your own pace, on your own terms.</p>
+  </div>
+</section>
+
+<section class="pillars-section" style="background:var(--brown-deep);padding-top:60px;">
+  <div class="container">
+    <div class="pillars-wrap">
+      <div class="pillars-grid">
+        <a href="fun-to-fit.html" class="pillar">
+          <img class="pillar-photo" src="images/pillar-fun-to-fit.png" alt="Fun to Fit" />
+          <div class="pillar-icon-wrap"><img src="images/icon-fun-to-fit.png" alt="" /></div>
+          <div class="pillar-inner">
+            <h3>Fun to Fit</h3>
+            <p>Wellness reimagined through movement, joy, and balance.</p>
+          </div>
+        </a>
+        <a href="reflections.html" class="pillar">
+          <img class="pillar-photo" src="images/pillar-reflections.png" alt="Reflections" />
+          <div class="pillar-icon-wrap"><img src="images/icon-reflections.png" alt="" /></div>
+          <div class="pillar-inner">
+            <h3>Reflections</h3>
+            <p>Pause. Look inward. Let truth meet you in the quiet.</p>
+          </div>
+        </a>
+        <a href="life-journeys.html" class="pillar">
+          <img class="pillar-photo" src="images/pillar-life-journeys.png" alt="Life Journeys" />
+          <div class="pillar-icon-wrap"><img src="images/icon-life-journeys.png" alt="" /></div>
+          <div class="pillar-inner">
+            <h3>Life Journeys</h3>
+            <p>Navigate change with grace, purpose, and steady footing.</p>
+          </div>
+        </a>
+        <a href="corporate-strategy.html" class="pillar">
+          <img class="pillar-photo" src="images/pillar-corporate-strategy.png" alt="Corporate Strategy" />
+          <div class="pillar-icon-wrap"><img src="images/icon-corporate-strategy.png" alt="" /></div>
+          <div class="pillar-inner">
+            <h3>Corporate Strategy</h3>
+            <p>Culture, performance, and longevity — led with calm.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-cream">
+  <div class="content-narrow text-center">
+    <span class="eyebrow">How we work</span>
+    <h2>Built for individuals and for organisations.</h2>
+    <p>Each pillar exists as a standalone experience and as part of a wider journey. Begin with one that calls you — we'll help you find the next step when you're ready.</p>
+    <a href="contact.html" class="btn btn-text mt-sm">Book a session <span class="arrow">&#8599;</span></a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <a href="index.html" class="footer-logo">Thulisile</a>
+    <ul class="footer-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="partners.html">Partnerships</a></li>
+      <li><a href="offerings.html">Offerings</a></li>
+      <li><a href="media.html">Media</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="footer-actions">
+      <a href="contact.html" class="btn btn-light">Book a session</a>
+    </div>
+    <div class="footer-bottom">&copy; <span id="year"></span> Thulisile. All rights reserved.</div>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="script.js"></script>
+</body>
+</html>
