@@ -316,10 +316,14 @@ p { margin: 0 0 1em; }
 .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
 
 @media (max-width: 800px) {
+  .hero {
+    align-items: flex-end;
+    padding: 140px 0 50px;
+  }
   .hero-inner { grid-template-columns: 1fr; }
-  .hero-bg { background-position: 62% center; }
+  .hero-bg { background-position: 62% top; }
   .hero::before {
-    background: linear-gradient(180deg, rgba(16,9,4,0.40) 0%, rgba(16,9,4,0.65) 60%, rgba(16,9,4,0.95) 100%);
+    background: linear-gradient(180deg, rgba(16,9,4,0.10) 0%, rgba(16,9,4,0.35) 40%, rgba(16,9,4,0.85) 72%, rgba(16,9,4,0.97) 100%);
   }
 }
 
