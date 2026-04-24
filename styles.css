@@ -662,7 +662,7 @@ p { margin: 0 0 1em; }
   gap: 24px;
 }
 .journey-card {
-  background: url('images/begin-journey-bg.png') center/cover no-repeat;
+  background: url('images/begin-journey-bg.jpg') center/cover no-repeat;
   border-radius: var(--radius-lg);
   padding: 60px 48px;
   min-height: 340px;
