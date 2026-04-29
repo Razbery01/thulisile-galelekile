@@ -3,3 +3,8 @@ extracted-images/
 *.pdf
 .DS_Store
 node_modules/
+.netlify/
+*.psd
+DSC*.png
+DSC*.jpg
+DSC*.JPG
