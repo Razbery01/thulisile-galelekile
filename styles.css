@@ -761,6 +761,107 @@ p { margin: 0 0 1em; }
   .journey-insights-grid { grid-template-columns: 1fr; }
 }
 
+/* ---------- ROTATING BANNER ---------- */
+.rotator {
+  background: var(--brown-rich);
+  color: var(--cream);
+  padding: 22px 20px;
+  overflow: hidden;
+  position: relative;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.rotator-track { text-align: center; position: relative; min-height: 1.6em; }
+.rotator-item {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(1rem, 1.6vw, 1.35rem);
+  color: var(--orange-soft);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  opacity: 0;
+  transition: opacity 0.7s;
+  pointer-events: none;
+}
+.rotator-item.active { opacity: 1; }
+
+/* ---------- STATS / BY THE NUMBERS ---------- */
+.stats-section {
+  background: var(--brown-deep);
+  color: var(--cream);
+  padding: 90px 0;
+  border-top: 1px solid var(--line);
+}
+.stats-head { text-align: center; margin-bottom: 56px; }
+.stats-head .eyebrow { color: rgba(246,236,221,0.6); }
+.stats-head h2 { color: var(--cream); }
+.stats-grid {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 28px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 32px;
+}
+.stat {
+  text-align: center;
+  padding: 24px 12px;
+  border-left: 1px solid rgba(246,236,221,0.12);
+}
+.stat:first-child { border-left: none; }
+.stat-num {
+  font-family: var(--serif);
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  color: var(--orange-soft);
+  line-height: 1;
+  margin-bottom: 12px;
+  display: block;
+}
+.stat-label {
+  color: rgba(246,236,221,0.82);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+@media (max-width: 700px) {
+  .stat { border-left: none; border-top: 1px solid rgba(246,236,221,0.1); padding-top: 24px; }
+  .stat:first-child { border-top: none; padding-top: 0; }
+}
+
+/* ---------- WISDOM QUOTE ---------- */
+.wisdom-quote {
+  background: var(--cream-soft);
+  color: var(--brown-deep);
+  padding: 90px 0;
+}
+.wisdom-inner {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 28px;
+  text-align: center;
+}
+.wisdom-inner .eyebrow { color: var(--muted); }
+.wisdom-inner blockquote {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(1.15rem, 2vw, 1.55rem);
+  line-height: 1.55;
+  color: var(--brown-deep);
+  margin: 20px 0 24px;
+  quotes: "\201C" "\201D";
+}
+.wisdom-inner blockquote::before { content: open-quote; color: var(--orange); font-size: 1.4em; line-height: 0; vertical-align: -0.25em; margin-right: 4px; }
+.wisdom-inner blockquote::after { content: close-quote; color: var(--orange); font-size: 1.4em; line-height: 0; vertical-align: -0.45em; margin-left: 2px; }
+.wisdom-inner .attribution {
+  font-family: var(--script);
+  font-size: 1.8rem;
+  color: var(--orange);
+  margin-top: 8px;
+}
+
 /* ---------- FOOTER ---------- */
 .footer {
   background: var(--brown-deep);

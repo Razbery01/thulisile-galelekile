@@ -11,6 +11,17 @@
     });
   }
 
+  const rotator = document.getElementById('rotator');
+  if (rotator) {
+    const items = rotator.querySelectorAll('.rotator-item');
+    let i = 0;
+    setInterval(() => {
+      items[i].classList.remove('active');
+      i = (i + 1) % items.length;
+      items[i].classList.add('active');
+    }, 4200);
+  }
+
   document.querySelectorAll('form[data-form]').forEach(form => {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
