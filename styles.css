@@ -761,6 +761,60 @@ p { margin: 0 0 1em; }
   .journey-insights-grid { grid-template-columns: 1fr; }
 }
 
+/* ---------- REFLECTION CALLOUT ---------- */
+.callout-section {
+  padding: 30px 0 60px;
+  background: var(--cream);
+}
+.callout-section.on-brown {
+  background: var(--brown-warm);
+  padding: 60px 0 30px;
+}
+.callout {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 32px 40px;
+  border-left: 3px solid var(--orange);
+  background: var(--cream-soft);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  position: relative;
+}
+.callout-section.on-brown .callout {
+  background: rgba(246,236,221,0.06);
+  border-left-color: var(--orange-soft);
+}
+.callout .eyebrow {
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+.callout-section.on-brown .callout .eyebrow { color: rgba(246,236,221,0.55); }
+.callout blockquote,
+.callout .callout-quote {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(1.05rem, 1.6vw, 1.3rem);
+  line-height: 1.5;
+  color: var(--brown-deep);
+  margin: 0;
+  quotes: "\201C" "\201D";
+}
+.callout-section.on-brown .callout .callout-quote,
+.callout-section.on-brown .callout blockquote { color: var(--cream); }
+.callout .callout-note {
+  margin-top: 14px;
+  font-size: 0.95rem;
+  color: var(--brown-rich);
+  line-height: 1.6;
+}
+.callout-section.on-brown .callout .callout-note { color: rgba(246,236,221,0.78); }
+.callout .callout-tag {
+  font-family: var(--script);
+  font-size: 1.4rem;
+  color: var(--orange);
+  display: block;
+  margin-bottom: 4px;
+}
+
 /* ---------- ROTATING BANNER ---------- */
 .rotator {
   background: var(--brown-rich);
